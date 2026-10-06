@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+</head>
+<body>
+    <header>
+       <h1>Create An Account</h1>  
+    </header>
+     
+       <main>
+           <form>
+             <label for="name">Name:
+               <input id="name" type="text" name="name" required>
+             </label>
+             <br>
+             <label for="email">Email: 
+                <input id="email" type="email" name="email" required>
+             </label>
+             <br>
+             <label for="password">Password: 
+                 <input type="password" id="password" name="password" required>
+             </label>
+             <br>
+             <p>Gender: </p>
+             <label for="male"> Male
+              <input type="radio" name="sex" id="male" required>
+             </label>
+             <label for="female">
+              Female <input type="radio" name="sex" id="female">
+             </label>
+             <br>
+             <p>What are your hobbies: </p>
+             <label for="dance"> 
+                 <input type="checkbox" id="dance" name="dance"> Dancing 
+             </label>
+             
+             <label for="song">
+                 <input type="checkbox" id="song" name="Sing"> Singing 
+             </label>
+             
+              <label for="book">
+    <input checked type="checkbox" name="reading" id="book">
+         Reading 
+    </label>
+    
+    <label for="music">
+    <input type="checkbox" name="music" id="music">
+     Listening to music 
+    </label>
+    
+    <label for="nap">
+    <input type="checkbox" name="sleep" id="nap">
+    Sleeping 
+    </label>
+    
+    <label for="sport">
+    <input type="checkbox" name="sport" id="sport">
+    Participating In A Sporting Activity 
+    </label>
+    <br>
+    <label for="country"> Country:
+        <select id="country" name="country">
+            <option selected value="Nigeria">
+                Nigeria
+            </option>
+            <option value="Ghana">
+                Ghana
+            </option>
+            <option value="Togo">
+               Togo
+            </option>
+            <option value="Benin">
+                Republic Of Benin
+            </option>
+            <option value="Congo">
+                Congo 
+            </option>
+            <option value="South-Africa">
+                South Africa 
+            </option>
+            <option value="Senegal">
+                Senegal
+            </option>
+            <option value="Algeria">
+                Algeria
+            </option>
+            <option value="Egypt">
+               Egypt 
+            </option>
+            <option value="Zimbabwe">
+                Zimbabwe 
+            </option>
+            <option value="Liberia">
+                Liberia
+            </option>
+            <option value="Morocco">
+                Morocco
+            </option>
+            <option value="Rwanda">
+                Rwanda
+            </option>
+            <option value="Angola">
+                Angola
+            </option>
+        </select>
+    </label>
+    <br><br>
+    <label for="bio">Your bio: 
+     <textarea id="bio" name="bio" cols="20" rows="4" maxlength="300"></textarea>
+        </label>
+        <br>
+  <button type="submit">Submit</button>
+           </form>
+       </main>
+</body>
+</html>
