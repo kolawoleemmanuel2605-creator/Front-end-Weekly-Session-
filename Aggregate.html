@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+   <html lang="en-US">
+     <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+        <title>UNILAG Aggregate Calculator</title>
+     </head>
+<body>
+    <header>
+         <nav>
+          <ul>
+           <li><a href="#catch">Catchment</a></li>
+            <li><a href="#calculate">Calculation Of Aggregate</a></li>
+            <li><a href="#results">Results</a></li>
+          </ul>
+        </nav>
+        </header>
+      <main>
+      <section>
+          <h1 id="catch">Catchment Status</h1>
+          <p>Catchment areas are states given special consideration during admission. Candidates from eligible states may have different programme cut-off marks from the general merit cut-off, depending on UNILAG's admission guidelines.</p>
+        <b>Are you from <abbr title="University Of Lagos">UNILAG</abbr> catchment states?</b>
+           <!-- state form -->
+          <form>
+              <fieldset>
+                  <legend>Catchment </legend>
+              
+              <label for="state">Select your state</label>
+            <br><br> <select id="state" name="state" >
+               <option value="null" selected disabled>Select your state</option>
+                  <option value="lagos">Lagos</option>
+                  <option value="ondo">Ondo</option>
+                  <option value="ekiti">Ekiti</option>
+                  <option value="osun">Osun</option>
+                  <option value="oyo">Oyo</option>
+                  <option value="ogun">Ogun</option>
+              </select>
+            </fieldset>
+          </form>
+      </section>
+      <section>
+        <h2 id="calculate">How to calculate your results</h2>
+          <p>
+              Add your O'Level points, your JAMB score divided by 8, and your Post-UTME score to obtain your aggregate score.
+         </p>
+          <ol>
+           <li><h3>O'Level Grade Points</h3>
+             <ul>
+               <li>A1 = 4.0 points</li>
+               <li>B2 = 3.6 points</li>
+               <li>B3 = 3.2 points</li>
+               <li>C4 = 2.8 points</li>
+               <li>C5 = 2.4 points</li>
+               <li>C6 = 2.0 points</li>
+            </ul>
+          
+              
+         <p>Add the points for your five relevant O'Level subjects.</p>
+        </li>
+       <li><h3>JAMB Score</h3>
+       <p>Add your Post-UTME score to the O'Level and JAMB points. <br>
+Formula: <br>
+Aggregate Score = O'Level Points + (JAMB Score ÷ 8) + Post-UTME Score
+      <br>
+Example:<br>
+If your JAMB score is 320:<br>
+320 ÷ 8 = 40
+      </p>
+    
+    Then add 40 to your O'Level points and Post-UTME score to get your aggregate score.</li>
+    </ol>
+    
+  </section>
+        <form id="results">
+          <fieldset>
+            <legend>Course selection</legend>
+            <label for="course">Choose your course:</label>
+         <br><br> <select id="course" name="course" >
+               
+          <option value="computer-science" selected>Computer Science</option>
+          
+          <option value="data-science" >Data Science</option>
+          
+        <option value="medicine">Medicine</option>
+              
+          <option value="law">Law</option>
+                  
+          <option value="accounting">Accounting</option>
+                
+          <option value="mechanical-engineering" >Mechanical Engineering</option>
+       
+         <option value="civil-engineering" >Civil Engineering</option>
+   
+         <option value="mass-communication" >Mass Communication</option>
+   
+         <option value="economics" >Economics</option>
+     
+         <option value="business-administration" >Business Administration</option>
+    
+        <option value="microbiology" >Microbiology</option>
+      
+        <option value="biochemistry" >Biochemistry</option>
+                  
+       <option value="nursing">Nursing</option>
+               
+       <option value="cyber-security" >Cyber security</option>
+                
+     
+                 </select>
+           </fieldset>
+ 
+            <fieldset>
+              <legend>Results</legend>
+               <label for="jamb"><abbr title="Unified Tertiary  Matriculation Examination">UTME</abbr> score:</label>
+          <br><br>  
+                <input type="number" id="jamb" name="jamb" placeholder="e.g. 326" min="200" max="400" required>
+                <br><br>
+           <label for="post-utme">Your Post-<abbr title="Unified Tertiary Examination">UTME</abbr> score:</label>
+            <br><br>
+            
+            
+                <input type="number" id="post-utme" name="post-utme" placeholder="e.g. 24" min="12" max="30" required>
+                <br><br>
+          <label for="waec">O'Level results</label>
+           <p>Select your five O'Level subjects and grades</p>
+             <br><br>
+              <select id="waec" name="english">
+                 <option value="english" selected>English language</option>
+                <option value="mathematics" disabled>Mathematics</option>
+              </select>
+              
+              <select name="subject1" required>
+                 <option value="null" selected disabled>Choose your grade</option>
+                <option value="a1">A1</option>
+                <option value="b2">B2</option>
+                <option value="b3">B3</option>
+                <option value="c4">C4</option>
+                <option value="c5">C5</option>
+                <option value="c6">C6</option>
+              </select>
+              <br><br>
+              
+              <select id="subject2" name="subject2">
+               <option value="english" disabled>English language</option>
+               <option value="mathematics" selected>Mathematics</option>
+               
+               
+              </select>
+              <select name="subject-2" required>
+             <option value="null" selected disabled>Choose your grade</option>
+                <option value="a1">A1</option>
+                <option value="b2">B2</option>
+                <option value="b3">B3</option>
+                <option value="c4">C4</option>
+                <option value="c5">C5</option>
+                <option value="c6">C6</option>
+              </select>
+              
+              <br><br>
+              <select id="subject3" name="subject3"  >
+               
+               <option value="physics">Physics</option>
+               <option value="chemistry">Chemistry</option>
+               <option value="biology">Biology</option>
+               <option value="further-maths">Further Mathematics</option>          
+               <option value="government">Government</option>
+               <option value="literature">Literature</option>
+               <option value="religious-studies">Religious Studies</option>
+               <option value="accounting">Accounting </option>
+               <option value="economics">Economics</option>
+               
+              </select>
+              <select name="subject3" required>
+                <option value="null" selected disabled>Choose your grade</option>
+                <option value="a1">A1</option>
+                <option value="b2">B2</option>
+                <option value="b3">B3</option>
+                <option value="c4">C4</option>
+                <option value="c5">C5</option>
+                <option value="c6">C6</option>
+                </select>
+                <br><br>
+              <select id="subject4" name="subject4" >
+               
+               <option value="physics">Physics</option>
+               <option value="chemistry" selected>Chemistry</option>
+               <option value="biology">Biology</option>
+               <option value="further-maths">Further Mathematics</option> 
+             <option value="government">Government</option>
+               <option value="literature">Literature</option>
+               <option value="religious-studies">Religious Studies </option>
+               <option value="accounting">Accounting </option>
+               <option value="economics">Economics</option>
+               
+              </select>
+              <select name="subject4" required>
+                <option value="null" selected disabled>Choose your grade</option>
+                <option value="a1">A1</option>
+                <option value="b2">B2</option>
+                <option value="b3">B3</option>
+                <option value="c4">C4</option>
+                <option value="c5">C5</option>
+                <option value="c6">C6</option>
+                </select>
+                
+                <br><br>
+              <select id="subject5" name="subject5" >
+               
+               <option value="physics">Physics</option>
+               <option value="chemistry">Chemistry</option>
+               <option value="biology">Biology</option>
+               <option value="further-maths" selected> Further Mathematics</option>          
+               <option value="government">Government</option>
+               <option value="literature">Literature</option>
+               <option value="religious-studies">Religious Studies </option>
+               <option value="accounting">Accounting </option>
+               <option value="economics">Economics</option>
+               
+              </select>
+              <select name="subject5" required>
+                  <option value="null" selected disabled>Choose your grade</option>
+                <option value="a1">A1</option>
+                <option value="b2">B2</option>
+                <option value="b3">B3</option>
+                <option value="c4">C4</option>
+                <option value="c5">C5</option>
+                <option value="c6">C6</option>
+                </select>
+            </fieldset>
+            
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+       </form>
+      </main>
+      <footer>
+          <a href="Academic.html">Go back to Academics</a>
+      </footer>
+</body>
+</html>
+              

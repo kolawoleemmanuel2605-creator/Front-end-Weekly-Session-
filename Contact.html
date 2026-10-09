@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+     <h1 id="about">Contact Us </h1>
+     <img src="unilag.jpg" alt="University of Lagos" height="200px" width="350px">
+     </header>
+     
+   
+   <!-- students information-->
+   <main>
+        <section>
+       <h2>Message</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend> Input your information </legend>
+                    <label for="name">Your full name:</label>
+                  <br><br> <input type="text" name="name" id="name" placeholder="eg. Gabriel Israel" required>
+                 <br><br>  <label for="email">Email:</label>
+                 <br><br>   <input type="email" id="email" name="email" placeholder="eg. example@gmail.com" required>
+              <br><br><label for="number">Phone number :</label>
+                  <br><br>  <input type="tel" id="number" name="phone" placeholder="e.g. +23400001111">
+                  <p>Gender: </p>
+             <label for="male"> Male
+              <input type="radio" name="sex" value="male" id="male" required>
+             </label>
+             <label for="female">
+              Female <input type="radio" value="female" name="sex" id="female">
+             </label>
+             <br><br>
+             <label for="country"> Select Your Country:
+        <select id="country" name="country">
+            <option selected value="Nigeria">
+                Nigeria
+            </option>
+            <option value="Ghana">
+                Ghana
+            </option>
+            <option value="Togo">
+               Togo
+            </option>
+            <option value="Benin">
+                Republic Of Benin
+            </option>
+            <option value="Congo">
+                Congo 
+            </option>
+            <option value="South-Africa">
+                South Africa 
+            </option>
+            <option value="Senegal">
+                Senegal
+            </option>
+            <option value="Algeria">
+                Algeria
+            </option>
+            <option value="Egypt">
+               Egypt 
+            </option>
+            <option value="Zimbabwe">
+                Zimbabwe 
+            </option>
+            <option value="Liberia">
+                Liberia
+            </option>
+            <option value="Morocco">
+                Morocco
+            </option>
+            <option value="Rwanda">
+                Rwanda
+            </option>
+            <option value="Angola">
+                Angola
+            </option>
+        </select>
+    </label>
+    <br><br>
+    <label for="bio"> Send Us A Message: 
+     <textarea id="bio" name="bio" cols="20" rows="4" maxlength="300"></textarea>
+        </label>
+        <br>
+     <button type="submit">Submit</button>
+     </fieldset>
+    </form>
+  </section>
+  </main>
+  <footer>
+      <a href="Academic.html">Go back to Academics</a>
+  </footer>
+ </body>
+</html>
